@@ -1,5 +1,5 @@
 # xml2json
-simple tool (and header) to convert an XML into a JSON
+Simple tool (and C++ header) to convert an XML into a JSON
 
 ##Build
 ```bash
