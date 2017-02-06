@@ -19,6 +19,14 @@ int main(int argc, char* argv[])
 	if (argc == 3)
 		indent = std::stoi(argv[2]);
 
-	std::cout << xml2json::parseit(fname, indent) << std::endl;
+	try
+	{
+		std::cout << xml2json::parseit(fname, indent) << std::endl;
+	}
+	catch(std::exception& ex)
+	{
+		std::cerr << ex.what() << std::endl;
+	}
+	
 	return 0;
 }

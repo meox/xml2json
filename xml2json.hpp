@@ -71,7 +71,7 @@ namespace xml2json
 	{
 		pugi::xml_document doc;
 		if (!doc.load_file(f.c_str()))
-			throw std::runtime_error("is not possible to load " + f );
+			throw std::runtime_error("is not possible to parse " + f );
 
 		pugi::xml_node root = doc.root();
 		json jroot = render_node(root);
