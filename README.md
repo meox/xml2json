@@ -1,18 +1,18 @@
 # xml2json
 Simple tool (and C++ header) to convert an XML into a JSON
 
-##Build
+## Build
 ```bash
 mkdir BUILD
 cd BUILD
 cmake ..
 make -j4
 ```
-##Usage
+## Usage
 ```
 ./xml2json Test/test.xml 2
 ```
-###output
+### output
 ```
 {
   "children": [
